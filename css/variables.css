@@ -1,0 +1,67 @@
+/* ==========================================
+   VARIABLES
+========================================== */
+
+:root{
+
+    /* ======================================
+       Brand Colors
+    ====================================== */
+
+    --primary:#D4AF37;
+    --primary-light:#E6C766;
+    --primary-dark:#B38F22;
+
+    --white:#FFFFFF;
+    --off-white:#F8F8F8;
+
+    --dark:#171717;
+    --text:#4E4E4E;
+    --text-light:#777777;
+
+    --border:#ECECEC;
+
+    /* ======================================
+       Typography
+    ====================================== */
+
+    --font-heading:"Cormorant Garamond", serif;
+    --font-body:"Inter", sans-serif;
+
+    --h1:clamp(3.5rem,6vw,5.8rem);
+    --h2:clamp(2.4rem,4vw,3.5rem);
+    --h3:1.6rem;
+
+    --body-lg:1.15rem;
+    --body:1.05rem;
+    --body-sm:.95rem;
+
+    --line-height:1.85;
+
+    /* ======================================
+       Layout
+    ====================================== */
+
+    --container:1200px;
+    --container-wide:1320px;
+
+    --section-spacing:120px;
+    --section-spacing-mobile:80px;
+
+    --radius:24px;
+
+    /* ======================================
+       Shadows
+    ====================================== */
+
+    --shadow-sm:0 6px 18px rgba(0,0,0,.06);
+    --shadow-md:0 18px 40px rgba(0,0,0,.10);
+    --shadow-lg:0 28px 70px rgba(0,0,0,.14);
+
+    /* ======================================
+       Transitions
+    ====================================== */
+
+    --transition:.35s ease;
+
+}

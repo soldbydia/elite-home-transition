@@ -1,0 +1,35 @@
+/* ==========================================
+   GLOBAL LAYOUT
+========================================== */
+
+.container{
+
+    width:min(100%, var(--container));
+
+    margin-inline:auto;
+
+}
+
+.container-wide{
+
+    width:min(100%, var(--container-wide));
+
+    margin-inline:auto;
+
+}
+
+.section{
+
+    padding:var(--section-spacing) 8%;
+
+}
+
+@media (max-width:768px){
+
+    .section{
+
+        padding:var(--section-spacing-mobile) 6%;
+
+    }
+
+}

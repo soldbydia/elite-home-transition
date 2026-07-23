@@ -1,0 +1,174 @@
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.site-header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+
+    background:rgba(255,255,255,.78);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.35);
+
+    transition:.35s ease;
+}
+
+.nav-container{
+
+    width:min(92%, var(--container));
+
+    margin:0 auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:40px;
+
+    padding:22px 0;
+
+    flex-wrap:nowrap;
+
+}
+
+/* ========================================
+   LOGO
+======================================== */
+
+.logo{
+
+    text-decoration:none;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:var(--dark);
+
+    font-family:var(--heading-font);
+}
+
+.logo span{
+
+    color:var(--gold);
+}
+
+/* ========================================
+   MENU
+======================================== */
+
+.nav-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex:1;
+
+    list-style:none;
+
+    gap:40px;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.nav-menu a{
+
+    text-decoration:none;
+
+    color:var(--dark);
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.nav-menu a:hover{
+
+    color:var(--gold);
+}/* ==========================================
+   RESOURCES DROPDOWN
+========================================== */
+
+.nav-menu .dropdown{
+    position:relative;
+}
+.dropdown > a{
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+
+.dropdown > a::after{
+    content:"▾";
+    font-size:.7rem;
+    transition:transform .3s ease;
+}
+
+.dropdown:hover > a::after{
+    transform:rotate(180deg);
+}
+
+.dropdown-menu{
+    position:absolute;
+    top:calc(100% + 18px);
+    left:50%;
+    transform:translateX(-50%);
+    min-width:260px;
+    padding:14px 0;
+    background:#ffffff;
+    border-radius:16px;
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:all .25s ease;
+
+    z-index:1000;
+}
+
+.dropdown:hover .dropdown-menu{
+
+    opacity:1;
+    visibility:visible;
+    top:calc(100% + 10px);
+
+}
+
+.dropdown-menu li{
+
+    list-style:none;
+
+}
+
+.dropdown-menu a{
+
+    display:block;
+    padding:14px 24px;
+
+    color:#333;
+    text-decoration:none;
+    font-size:.95rem;
+
+    transition:.25s ease;
+
+}
+
+.dropdown-menu a:hover{
+
+    background:#faf8f5;
+    color:var(--accent-color);
+    padding-left:30px;
+
+}

@@ -1,0 +1,99 @@
+/* ==========================================
+   CTA
+========================================== */
+
+.cta{
+    padding:120px 0;
+    background:#f6f3ee;
+}
+
+.cta-wrapper{
+    max-width:900px;
+    margin:0 auto;
+    padding:90px 80px;
+    text-align:center;
+    background:#ffffff;
+    border-radius:24px;
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+    position:relative;
+    overflow:hidden;
+}
+
+.cta-wrapper::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    width:90px;
+    height:4px;
+    background:var(--accent-color);
+    border-radius:999px;
+}
+
+.cta-subtitle{
+    display:block;
+    margin-bottom:20px;
+    font-size:.85rem;
+    font-weight:600;
+    letter-spacing:.25em;
+    text-transform:uppercase;
+    color:var(--accent-color);
+}
+
+.cta-title{
+    margin-bottom:28px;
+    font-size:clamp(2.3rem,4vw,3.5rem);
+    font-weight:300;
+    line-height:1.2;
+    color:#222;
+}
+
+.cta-description{
+    max-width:680px;
+    margin:0 auto 45px;
+    font-size:1.1rem;
+    line-height:1.9;
+    color:#666;
+}
+
+.cta-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.cta-buttons .btn{
+    min-width:240px;
+}
+
+@media (max-width:768px){
+
+    .cta{
+        padding:90px 0;
+    }
+
+    .cta-wrapper{
+        padding:60px 35px;
+    }
+
+    .cta-title{
+        font-size:2.2rem;
+    }
+
+    .cta-description{
+        font-size:1rem;
+    }
+
+    .cta-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .cta-buttons .btn{
+        width:100%;
+        max-width:340px;
+    }
+
+}
